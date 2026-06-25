@@ -43,7 +43,7 @@ const About = () => {
           <div className="lg:col-span-2 reveal">
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden">
               <img
-                src="/avatar.png"
+                src="/portfolio/assets/avatar.png" loading="lazy"
                 alt="朱超 - AI产品设计师"
                 className="w-full h-full object-cover"
               />

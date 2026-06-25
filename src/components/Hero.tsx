@@ -60,7 +60,7 @@ const Hero = () => {
 
             <div className="reveal stagger-3 flex flex-wrap gap-4 mt-12">
               <a 
-                href="/朱超个人作品集-18682217772%20.pdf" 
+                href="https://drive.google.com/uc?export=download&id=1et82pKktvsRWOJ_YDIexVRMJKKgpW95B" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-primary px-8 py-4 rounded-lg text-lg inline-block"
@@ -68,8 +68,9 @@ const Hero = () => {
                 查看作品集
               </a>
               <a 
-                href="/朱超个人简历-18682217772.pdf" 
-                download="朱超个人简历.pdf"
+                href="https://drive.google.com/file/d/1Snx5h1DA0e1bT9xtJ971_4bkNNd0teWf/view?usp=drive_link" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="btn-secondary px-8 py-4 rounded-lg text-lg inline-block"
               >
                 下载简历

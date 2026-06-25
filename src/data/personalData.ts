@@ -3,18 +3,18 @@ export const personalInfo = {
   title: 'UI/UX Designer',
   email: 'zhuchaotcl@sina.com',
   phone: '18682217772',
-  location: '中国·深圳',
+  location: '深圳市',
 };
 
 export const heroData = {
   title: '设计，让体验说话',
   subtitle: '专注 UI/UX 设计，探索人机交互的无限可能',
-  backgroundImage: '/Wed1.png',
+  backgroundImage: '/portfolio/assets/Wed1.png',
 };
 
 export const aboutData = {
-  portraitImage: '/VetMew.png',
-  workspaceImage: '/Smartcamera.png',
+  portraitImage: '/portfolio/assets/VetMew.png',
+  workspaceImage: '/portfolio/assets/Smartcamera.png',
   intro: '六年深耕数字产品设计，相信好的设计是技术与艺术的平衡。',
 };
 
@@ -24,7 +24,7 @@ export const projects = [
     title: 'VetMew 汪喵灵灵',
     subtitle: 'AI宠物健康管理平台',
     category: 'AI Product',
-    image: '/VetMew.png',
+    image: '/portfolio/assets/VetMew.png',
     stats: { users: '42万+', engagement: '68%', rating: '4.9' },
     tags: ['AI', '宠物', '健康', '小程序'],
     role: 'Lead Product Designer',
@@ -47,7 +47,7 @@ export const projects = [
     title: '海目易聚',
     subtitle: '全场景AI智能家居监控平台',
     category: 'IoT',
-    image: '/Smartcamera.png',
+    image: '/portfolio/assets/Smartcamera.png',
     stats: { users: '50万+', engagement: '78%', rating: '4.6' },
     tags: ['IoT', '智能家居', '监控', 'AI'],
     role: 'Senior Product Designer',
@@ -70,7 +70,7 @@ export const projects = [
     title: 'Vesync 智能硬件生态',
     subtitle: 'Vesync Smart Hardware Ecosystem',
     category: 'IoT',
-    image: '/Vesync.png',
+    image: '/portfolio/assets/Vesync.png',
     stats: { users: '180万+', engagement: '85%', rating: '4.8' },
     tags: ['IoT', '智能家居', '健康'],
     role: 'Lead UX/UI Designer',
@@ -93,7 +93,7 @@ export const projects = [
     title: 'Intellectia AI',
     subtitle: 'AI金融分析平台',
     category: 'FinTech',
-    image: '/AIWEB.png',
+    image: '/portfolio/assets/AIWEB.png',
     stats: { users: '120万+', engagement: '82%', rating: '4.8' },
     tags: ['金融', '投资', 'AI'],
     role: 'Senior UX Designer',
@@ -116,7 +116,7 @@ export const projects = [
     title: 'Astronaut 元宇宙平台',
     subtitle: 'DeFi & GameFi Space Exploration Platform',
     category: 'Blockchain',
-    image: '/Wed1.png',
+    image: '/portfolio/assets/Wed1.png',
     stats: { users: '8万+', engagement: '75%', rating: '4.7' },
     tags: ['DeFi', 'NFT', '元宇宙'],
     role: 'Product Designer',
@@ -139,7 +139,7 @@ export const projects = [
     title: '治安管理智能化平台',
     subtitle: 'Intelligent Public Security Management System',
     category: 'Data Platform',
-    image: '/data.png',
+    image: '/portfolio/assets/data.png',
     stats: { users: '200+', engagement: '90%', rating: '4.9' },
     tags: ['数据', '大屏', '可视化'],
     role: 'Lead UI Designer',
@@ -163,24 +163,24 @@ export const skills = [
   {
     id: 1,
     title: '用户研究',
-    image: '/AIWEB.png',
+    image: '/portfolio/assets/AIWEB.png',
   },
   {
     id: 2,
     title: '界面设计',
-    image: '/data.png',
+    image: '/portfolio/assets/data.png',
   },
   {
     id: 3,
     title: '交互原型',
-    image: '/Vesync.png',
+    image: '/portfolio/assets/Vesync.png',
   },
 ];
 
 export const contactData = {
   contactImages: [
-    '/Wed1.png',
-    '/AIWEB.png',
+    '/portfolio/assets/Wed1.png',
+    '/portfolio/assets/AIWEB.png',
   ],
   socialLinks: [
     { platform: 'Behance', url: 'https://behance.net' },

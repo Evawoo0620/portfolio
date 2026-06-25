@@ -7,7 +7,7 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/project/:id" element={<ProjectDetail />} />

@@ -66,7 +66,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h4 className="text-text-primary font-semibold mb-2">电话</h4>
-              <p className="text-text-muted">+86 138 8888 8888</p>
+              <p className="text-text-muted">+86 186 8221 7772</p>
             </div>
 
             <div className="bg-bg-card border border-border rounded-xl p-6">
@@ -77,7 +77,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h4 className="text-text-primary font-semibold mb-2">地址</h4>
-              <p className="text-text-muted">上海市浦东新区</p>
+              <p className="text-text-muted">深圳市</p>
             </div>
           </div>
         </div>

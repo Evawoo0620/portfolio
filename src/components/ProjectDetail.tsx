@@ -17,14 +17,19 @@ export default function ProjectDetail() {
       case 2: return [12, 16, 17, 18]; // 存在 12, 16, 17, 18
       case 3: return [20, 21, 22, 23, 24, 25, 26, 27]; // 20-27 全部存在
       case 4: return [34, 35, 36, 37]; // 34-37
-      case 5: return [39]; // 39
+      case 5: return [1]; // 01
       case 6: return [38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48]; // 38-48
       default: return [];
     }
   };
   
   const imageNumbers = getImageRange(project?.id);
-  const galleryImages = imageNumbers.map(num => `/${String(num).padStart(2, '0')}.png`);
+  const galleryImages = imageNumbers.map(num => `/portfolio/assets/${String(num).padStart(2, '0')}.png`);
+
+  // 页面进入时滚动到顶部
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -150,7 +155,7 @@ export default function ProjectDetail() {
                     onClick={() => openLightbox(index)}
                   >
                     <img
-                      src={`/${String(num).padStart(2, '0')}.png`}
+                      src={`/portfolio/assets/${String(num).padStart(2, '0')}.png`}
                       alt={`项目展示图 ${num}`}
                       className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -261,7 +266,7 @@ export default function ProjectDetail() {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={`/${String(imageNumbers[selectedImageIndex!]).padStart(2, '0')}.png`}
+              src={`/portfolio/assets/${String(imageNumbers[selectedImageIndex!]).padStart(2, '0')}.png`}
               alt={`项目展示图 ${selectedImageIndex! + 1}`}
               className="max-w-full max-h-[80vh] object-contain rounded-lg"
             />
