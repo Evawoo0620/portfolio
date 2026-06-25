@@ -4,6 +4,9 @@ node_modules/
 # Build output
 dist/
 
+# Vite cache
+.vite/
+
 # Environment files
 .env
 .env.local
@@ -27,3 +30,10 @@ npm-debug.log*
 
 # Testing
 coverage/
+
+# Zip files
+*.zip
+
+# Temporary files
+*.tmp
+*.temp
