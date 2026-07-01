@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Blog = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,6 +56,14 @@ const Blog = () => {
       date: '2024-01-01',
       readTime: '6分钟',
     },
+    {
+      id: 5,
+      title: '智能家居 AI Agent',
+      category: 'AI',
+      excerpt: '探索智能家居 AI Agent 的交互设计，体验智能家庭的未来生活方式。',
+      date: '2024-02-01',
+      readTime: '互动体验',
+    },
   ];
 
   return (
@@ -85,6 +95,7 @@ const Blog = () => {
               key={article.id}
               className="reveal group cursor-pointer bg-bg-card border border-border rounded-xl p-6 hover:border-accent-primary/30 transition-all duration-300"
               style={{ transitionDelay: `${(index % 2) * 0.1}s` }}
+              onClick={() => navigate(`/blog/${article.id}`)}
             >
               <div className="flex items-start justify-between mb-4">
                 <span className="px-3 py-1 rounded-full bg-accent-primary/10 text-accent-primary text-xs font-medium">

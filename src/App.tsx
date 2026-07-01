@@ -4,6 +4,7 @@ import About from './components/About';
 import SelectedWorks from './components/SelectedWorks';
 import DesignProcess from './components/DesignProcess';
 import Skills from './components/Skills';
+import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -17,6 +18,7 @@ function App() {
         <SelectedWorks />
         <DesignProcess />
         <Skills />
+        <Blog />
         <Contact />
       </main>
       <Footer />
