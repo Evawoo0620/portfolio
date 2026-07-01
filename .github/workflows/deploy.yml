@@ -27,10 +27,12 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build
         run: npm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
 
       - name: Deploy to main branch
         run: |
@@ -40,5 +42,5 @@ jobs:
           git rm -rf assets/ 2>/dev/null || true
           cp -r dist/. .
           git add index.html assets/
-          git commit -m "deploy: GitHub Actions构建产物"
+          git diff --cached --quiet || git commit -m "deploy: GitHub Actions构建产物"
           git push origin main
