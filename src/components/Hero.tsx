@@ -68,7 +68,7 @@ const Hero = () => {
                 查看作品集
               </a>
               <a 
-                href="https://drive.google.com/file/d/1Snx5h1DA0e1bT9xtJ971_4bkNNd0teWf/view?usp=drive_link" 
+                href="https://drive.google.com/file/d/1wxXMiYbk5zOCc-c9LlryYW88x_KM31Qp/view?usp=drive_link" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-secondary px-8 py-4 rounded-lg text-lg inline-block"
