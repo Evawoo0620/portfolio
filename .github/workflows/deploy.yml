@@ -15,6 +15,7 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'deploy: GitHub Actions构建产物')"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
