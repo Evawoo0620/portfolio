@@ -45,13 +45,13 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="reveal stagger-1 font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2] tracking-tight">
-              <span className="block text-text-primary mb-2">Designing</span>
-              <span className="block gradient-text mb-2">AI Products,</span>
-              <span className="block text-text-primary mb-2">Digital</span>
-              <span className="block gradient-text mb-2">Experiences,</span>
-              <span className="block text-text-primary mb-2">and</span>
-              <span className="block gradient-text">Future Interfaces.</span>
+            <h1 className="reveal stagger-1 font-heading leading-[1.15] tracking-tight">
+              <span className="block text-text-primary text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-2">Designing</span>
+              <span className="block gradient-text text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2">AI Products,</span>
+              <span className="block text-text-primary text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-2">Digital</span>
+              <span className="block gradient-text text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2">Experiences,</span>
+              <span className="block text-text-primary text-xl md:text-2xl lg:text-3xl xl:text-4xl font-normal mb-2">and</span>
+              <span className="block gradient-text text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">Future Interfaces.</span>
             </h1>
 
             <p className="reveal stagger-2 text-text-secondary text-lg md:text-xl max-w-xl leading-loose mt-10">
