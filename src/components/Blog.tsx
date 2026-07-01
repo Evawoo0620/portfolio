@@ -74,13 +74,15 @@ const Blog = () => {
     >
       <div className="max-w-container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
-          <div className="reveal">
-            <span className="inline-block px-4 py-2 rounded-full bg-accent-primary/10 text-accent-primary text-sm font-medium mb-4">
-              设计思考
-            </span>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-text-primary">
-              Blog & Articles
-            </h2>
+          <div className="reveal flex-1 md:flex md:justify-center">
+            <div className="text-center">
+              <span className="inline-block px-4 py-2 rounded-full bg-accent-primary/10 text-accent-primary text-sm font-medium mb-4">
+                设计思考
+              </span>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-text-primary">
+                Blog & Articles
+              </h2>
+            </div>
           </div>
           <div className="reveal stagger-1 mt-6 md:mt-0">
             <button className="btn-secondary px-6 py-3 rounded-lg">
