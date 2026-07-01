@@ -75,9 +75,14 @@ const Navbar = () => {
               <span>搜索</span>
               <kbd className="px-1.5 py-0.5 rounded bg-bg-primary border border-border text-xs font-mono">⌘K</kbd>
             </button>
-            <button className="btn-primary px-6 py-2.5 rounded-lg text-sm">
+            <a
+              href="https://drive.google.com/file/d/1wxXMiYbk5zOCc-c9LlryYW88x_KM31Qp/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary px-6 py-2.5 rounded-lg text-sm"
+            >
               Resume
-            </button>
+            </a>
           </div>
 
           <button
@@ -118,9 +123,14 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <button className="btn-primary px-6 py-3 rounded-lg mt-2">
+            <a
+              href="https://drive.google.com/file/d/1wxXMiYbk5zOCc-c9LlryYW88x_KM31Qp/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary px-6 py-3 rounded-lg mt-2"
+            >
               Resume
-            </button>
+            </a>
           </div>
         </div>
 
