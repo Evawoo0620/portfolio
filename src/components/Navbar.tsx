@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import GlobalSearch from './GlobalSearch';
+import { Search } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,6 +14,18 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        setIsSearchOpen(true);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   const navLinks = [
@@ -51,7 +66,15 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center gap-3">
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              className="flex items-center gap-2 px-3 py-2 rounded-lg bg-bg-elevated border border-border hover:border-accent-primary/30 text-sm text-text-muted"
+            >
+              <Search className="w-4 h-4" />
+              <span>搜索</span>
+              <kbd className="px-1.5 py-0.5 rounded bg-bg-primary border border-border text-xs font-mono">⌘K</kbd>
+            </button>
             <button className="btn-primary px-6 py-2.5 rounded-lg text-sm">
               Resume
             </button>
@@ -100,6 +123,8 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
+        <GlobalSearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       </div>
     </nav>
   );
