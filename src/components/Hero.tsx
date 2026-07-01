@@ -92,7 +92,7 @@ const Hero = () => {
           </div>
 
           <div className="relative reveal stagger-3">
-            <div className="relative w-full aspect-square max-w-lg mx-auto">
+            <div className="relative w-full aspect-square">
               <div className="absolute inset-0 bg-gradient-to-br from-accent-purple/20 via-accent-cyan/20 to-accent-pink/20 rounded-full blur-3xl" />
               
               <div className="absolute top-10 right-10 w-48 h-64 bg-bg-card border border-accent-cyan/30 rounded-xl p-3 animate-float">
